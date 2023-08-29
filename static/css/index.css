@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');   
+
 *{
     margin:0;
     padding:0;
@@ -36,18 +39,78 @@ header nav ul li a:hover{
 }
 
 
+/* Main Section */
+.main{
+    text-align: center;
+}
+.main h2{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 4rem;
+    color: var(--secondary);
+    text-align: center  ;
+}
+.main .inner{
+    padding: 1rem 2rem 0rem;
+}
+.main .inner .inner-one p{
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    padding:0rem 3rem;
+}
+.main .inner .inner-one h3{
+    margin:1.6rem;
+    text-align: center;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 2rem;
 
-
+    color: var(--secondary);
+}
+.main .inner .inner-one .explore-btn button{
+    cursor: pointer;
+    font-family: 'Share Tech Mono', monospace;
+    margin:1.5rem 0rem;
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    border-radius: 7px;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    padding:1rem 3.3rem; 
+    transition: 100ms ease-in-out;
+}
+.main .inner .inner-one .explore-btn button:hover{
+    background-color: var(--secondary);
+    color: black;
+}
+.main .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Image */
+.main .inner img{
+    width:600px;
+    height: 480px;
+}
 
 /* Footer CSS */
 footer{
+    font-size: 1.2rem;
+    font-family: 'Share Tech Mono', monospace;
     text-align: center;
     background-color: var(--secondary);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     color: black;
-    padding:1rem;
-    margin-top: 10rem;
+    padding:1rem
 }
 footer a{
+    color:rgb(192, 37, 37);
     text-decoration: none;
     text-decoration: underline;
+    transition: 100ms ease-in-out;
+}
+footer a:hover{
+    color:white;
 }
