@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+   --secondary : #FFC436;
+   --third: rgb(42, 117, 215);
+}
+::selection {
+    color: var(--third);
+    background: var(--secondary);
+}
+body{
+    background-color: rgb(24, 24, 24);
+    color:white;
+}
+ul{
+    display:flex;
+    padding: 2.5rem 3rem 2rem;
+}
+header nav ul li{
+    font-size: 1.5rem;
+    padding-right:4rem;
+    list-style: none;
+}
+header nav ul li a{
+    font-family: 'Tilt Prism', cursive;
+    transition: 100ms ease-in;
+    color:#fdd371;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color:rgb(255, 136, 0);
+}
+h2, p{
+    text-align: center;
+}
+h2{
+    font-size: 4rem;
+    font-family: 'Tilt Prism', cursive;
+    text-align: center;
+    color: var(--secondary);
+}
+p{
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    margin:1rem 0rem;
+}
+select {
+    transform: translateY(-2px);
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.1rem;
+    width: 530px;
+    padding: 0.35rem 0.3rem;
+    outline: none;
+    border: none;
+    border: 1px solid #FFC436;
+    color:#FFC436;
+
+    background-color: rgb(21, 21, 21);
+    border-radius: 5px;
+}
+option{
+    font-size: 1rem;
+    font-family: 'Baloo 2', cursive;
+    background-color: #FFC436;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+}
+option:hover, option:checked {
+    background-color: rgb(42, 117, 215);
+    color:rgb(255, 255, 255);
+}
+
+/* Submit Button CSS*/
+.btn{
+    font-size: 1.1rem;    
+    font-family: 'Quicksand', sans-serif;
+    padding:.65rem 2rem;
+    margin-left:0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--third);
+    color: var(--secondary);
+    transition: 100ms ease-in;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #FFC436;
+    color: var(--third);
+}
+
+/* Displayed books */
+.main{
+    display:flex;
+    margin-top:1rem;
+}
+.main .item{
+    width:230px;
+    
+    padding:1rem 1.5rem;
+    margin:2rem 1rem;
+}
+.main .item img{
+    width:170px;
+    height:250px;
+    transition:200ms ease-in-out;
+
+}
+.main .item .image{
+    width:170px;
+    height:250px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.main .item .image{
+    border:1px solid rgb(149, 149, 149); 
+}
+.main .item img:hover{
+    
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.main .item h3, .main .item h4{
+    pointer-events: none;
+    text-align: center;
+}
+
+/* book title*/
+.main .item h3{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+/* Book Author*/
+.main .item h4{
+    font-family: 'Fira Sans', sans-serif;
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+   --secondary : #FFC436;
+   --third: rgb(42, 117, 215);
+}
+::selection {
+    color: var(--third);
+    background: var(--secondary);
+}
+body{
+    background-color: rgb(24, 24, 24);
+    color:white;
+}
+ul{
+    display:flex;
+    padding: 2.5rem 3rem;
+}
+header nav ul li{
+    font-size: 1.5rem;
+    padding-right:4rem;
+    list-style: none;
+}
+header nav ul li a{
+    font-family: 'Tilt Prism', cursive;
+    transition: 100ms ease-in;
+    color:#fdd371;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color:rgb(255, 136, 0);
+}
+
+
+
+
+
+/* Footer CSS */
+footer{
+    text-align: center;
+    background-color: var(--secondary);
+    color: black;
+    padding:1rem;
+    margin-top: 10rem;
+}
+footer a{
+    text-decoration: none;
+    text-decoration: underline;
+}

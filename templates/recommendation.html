@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommender</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="/static/css/recommendation.css">
+
+    <!-- Logo Link -->
+    <link rel="icon" href="/static/images/book-logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('recommendation')}}">Recommendation</a></li>                       
+            </ul>
+        </nav>
+    </header> 
+
+    <!-- Book Input -->
+    <h2>BOOK RECOMMENDER</h2>
+    <p>Select a book...</p>
+    <form action="{{url_for('recommend')}}" method="POST" align="center">
+
+        <select id="bookSelect" name="bookName" value="Select your Movie"    >
+            
+            {% for i in titles %}
+                <option value="{{i}}" name="bookName">{{i}}</option>
+            {% endfor %}
+
+        </select>
+        <input type="submit" class="btn" value="RECOMMEND" >
+    </form>
+
+    <!-- Section to diplay recommended books here -->
+    <section class="main">
+        {% for i in movies %}
+            <div class="item" align="center">
+                <div class="image">
+                    <img src="{{i[2]}}" alt="book-image" >
+                </div>
+                <h3>{{i[0]}}</h3>
+                <h4>{{i[1]}}</h4>
+            </div>
+        {% endfor %}
+    </section>
+
+    <script src="/static/js/recommendation.js"></script>
+</body>
+</html>
