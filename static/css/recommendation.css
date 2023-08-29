@@ -146,3 +146,62 @@ option:hover, option:checked {
 .main .item h4{
     font-family: 'Fira Sans', sans-serif;
 }
+
+
+
+/* Media Queries for mobile phones */
+@media only screen and (max-width: 1000px) {
+    ul{
+        display:flex;
+        padding: 1.5rem 2rem;
+    }
+    header nav ul li{
+        font-size: 1.3rem;
+        padding-right:2rem;
+    }
+    /* Main heading */
+    h2{
+        font-size: 2rem;
+        margin:1.2rem 0rem 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+        margin:1rem 0rem;
+    }
+
+    /* Select CSS */
+    select {
+        transform: translateY(-2px);
+        font-size: 1rem;
+        width: 330px;
+        padding: 0.30rem 0.2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Submit Button CSS*/
+    .btn{
+        font-size: .9rem;    
+        padding:.65rem 1.5rem;
+        margin-left:0.5rem;
+    }
+
+    /* Displayed books */
+    .main{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .item .image{
+        width:150px;
+        height:200px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+    }
+    .main .item img{
+        width:150px;
+        height:200px;
+        transition:200ms ease-in-out;
+    
+    }
+}

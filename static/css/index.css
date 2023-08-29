@@ -31,7 +31,7 @@ header nav ul li{
 header nav ul li a{
     font-family: 'Tilt Prism', cursive;
     transition: 100ms ease-in;
-    color:#fdd371;
+    color:#ffc642;
     text-decoration: none;
 }
 header nav ul li a:hover{
@@ -113,4 +113,44 @@ footer a{
 }
 footer a:hover{
     color:white;
+}
+
+/* Media Queries for mobile phones */
+@media only screen and (max-width: 1000px) {
+    ul{
+        display:flex;
+        padding: 1.5rem 2rem;
+    }
+    header nav ul li{
+        font-size: 1.3rem;
+        padding-right:2rem;
+    }
+    /* Hide the image */
+    .main .inner img{
+        display: none;
+    }
+    .main h2{
+        padding:1rem 2rem;
+        font-size: 2rem;
+    }
+    .main .inner .inner-one p{
+        font-size: 1rem;
+        line-height: 3rem;
+        padding:0rem .3rem;
+    }
+    .main .inner .inner-one h3{
+        margin:1.3rem;
+        font-size: 1.5rem;
+    
+        color: var(--secondary);
+    }
+    .main .inner .inner-one .explore-btn button{
+        margin:1.5rem 0rem;
+        font-size: 1.2rem;
+        padding:.6rem 1.3rem; 
+    }
+    footer {
+        font-size: 1rem;
+        padding:.8rem;
+    }
 }
